@@ -1,0 +1,112 @@
+  * {
+      box-sizing: border-box;
+  }
+  
+  body {
+      background-color: #242333;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+  
+  h1 {
+      margin-bottom: 30px;
+      font-weight: bolder;
+  }
+  
+  ul {
+      margin-bottom: 10px;
+  }
+  
+  p {
+      margin-top: 20px;
+  }
+  
+  button {
+      font-weight: bolder;
+  }
+  
+  .movies label {
+      font-weight: 700;
+  }
+  
+  .movies select {
+      background-color: #fff;
+      border: 0;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 15px 5px 15px;
+      margin-bottom: 0px;
+  }
+  
+  .screen {
+      background-color: #fff;
+      height: 170px;
+      width: 70%;
+      margin: 15px 0;
+      transform: rotateX(-48deg);
+      box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+      -webkit-transform: rotateX(-48deg);
+      -moz-transform: rotateX(-48deg);
+      -ms-transform: rotateX(-48deg);
+      -o-transform: rotateX(-48deg);
+  }
+  
+  .seat {
+      background-color: #e8e8fa;
+      height: 12px;
+      width: 15px;
+      margin: 3px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+  
+  .seat:not(.sold):hover {
+      cursor: pointer;
+      background-color: #0ff30f;
+  }
+  
+  .seat.selected {
+      background-color: #0ff30f;
+  }
+  
+  .seat.sold {
+      background-color: rgb(245, 87, 87);
+  }
+  
+  .seat:nth-of-type(2) {
+      margin-right: 18px;
+  }
+  
+  .seat:nth-last-of-type(2) {
+      margin-left: 18px;
+  }
+  
+  .showcase {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 5px, 10px;
+      border-radius: 5px;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+  }
+  
+  .showcase li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+  }
+  
+  .showcase li small {
+      margin-left: 2px;
+  }
+  
+  .seats {
+      justify-self: center;
+  }
