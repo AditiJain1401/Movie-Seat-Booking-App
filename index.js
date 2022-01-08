@@ -1,6 +1,6 @@
 const selectedSeatsCount = document.getElementById('count');
 const price = document.getElementById('price');
-const seats = Array.from(document.querySelectorAll('.seat'));
+const seats = Array.from(document.querySelectorAll('.seats .seat'));
 const bookButton = document.getElementById("bookBtn");
 const resetButton = document.getElementById("resetBtn");
 
@@ -51,7 +51,7 @@ function bookSeats() {
 
 function reset() {
     changeSeatColor("#e8e8fa")
-    bookButton.classList.add('d-none');
+    resetButton.classList.add('d-none');
     count = 0;
     bookedSeatIndex = []
     selectedSeatsCount.innerText = 0
